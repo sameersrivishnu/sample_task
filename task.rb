@@ -24,7 +24,8 @@ class Task
 	        banned.each do |word|
 		        if word.length > 10
 		          puts "Enter banned words lessthan 10 or 10 characters"
-		        Task.banne(n) 
+		        Task.banne(n)
+			abort	
 		        end   
             end 	
           Task.ban(n,banned)
@@ -36,6 +37,7 @@ class Task
 			else
 			puts "Please enter banned words lessthan 100."
 			Task.ban(n,banned)
+			abort
 		end
 		puts "........................................."	
 	   Task.execute(n,banned)
